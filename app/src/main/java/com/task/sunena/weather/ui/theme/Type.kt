@@ -2,11 +2,16 @@ package com.task.sunena.weather.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.task.sunena.weather.R
 
-// Set of Material typography styles to start with
+val Poppins = FontFamily(
+    Font(R.font.poppins_bold, FontWeight.Bold),    // 400
+    Font(R.font.poppins_semibold, FontWeight.SemiBold),
+)
 val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
@@ -16,18 +21,27 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     ),
     titleLarge = TextStyle(
+        fontFamily = Poppins,
+        fontWeight = FontWeight.Bold,
         fontSize = 18.sp,
-        fontWeight = FontWeight.Bold
+        lineHeight = 28.sp,
+        letterSpacing = 0.sp
     ),
 
-    titleMedium = TextStyle(
+    titleMedium =  TextStyle(
+        fontFamily = Poppins,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 16.sp,
-        fontWeight = FontWeight.SemiBold
+        lineHeight = 24.sp,
+        letterSpacing = 0.sp
     ),
 
     displayLarge = TextStyle(
+        fontFamily = Poppins,
+        fontWeight = FontWeight.Bold,
         fontSize = 36.sp,
-        fontWeight = FontWeight.Bold
+        lineHeight = 44.sp,
+        letterSpacing = 0.sp
     )
 
 
