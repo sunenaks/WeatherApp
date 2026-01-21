@@ -58,6 +58,12 @@ android {
         compose = true
         buildConfig = true
     }
+
+    packaging {
+        resources {
+            excludes.add("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
+        }
+    }
 }
 
 kotlin {
@@ -79,7 +85,12 @@ dependencies {
 
     // Hilt (with ksp)
     implementation(libs.hilt.android)
+    implementation(libs.androidx.navigation.runtime.android)
     ksp(libs.hilt.compiler)
+    implementation(libs.hilt.navigation.compose)
+
+    implementation(libs.coil.compose)
+
 
 
     // Retrofit

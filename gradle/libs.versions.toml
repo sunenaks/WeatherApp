@@ -1,6 +1,6 @@
 [versions]
 agp = "8.11.2"
-kotlin = "2.3.0"
+kotlin = "2.1.10"
 coroutines = "1.10.2"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -12,9 +12,11 @@ composeBom = "2025.12.01"
 retrofit = "3.0.0"
 okhttp = "5.3.2"
 googleLocation = "21.3.0"
-hilt = "2.57.2"
+hilt = "2.51.1"
 hiltNavigation = "1.2.0"
-ksp = "2.3.0"
+ksp = "2.1.10-1.0.29"
+navigationRuntimeAndroid = "2.9.6"
+coil = "2.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +44,9 @@ kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-cor
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleRuntimeKtx" }
 
+# Added for Image Loading (Coil)
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
 # Added for Networking (Retrofit, OkHttp)
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
@@ -54,6 +59,7 @@ google-location-services = { group = "com.google.android.gms", name = "play-serv
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
+androidx-navigation-runtime-android = { group = "androidx.navigation", name = "navigation-runtime-android", version.ref = "navigationRuntimeAndroid" }
 
 
 [plugins]
